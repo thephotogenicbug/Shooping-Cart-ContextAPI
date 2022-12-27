@@ -1,13 +1,14 @@
 import React from "react";
 import { Badge, Container, Dropdown, FormControl, Nav, Navbar } from "react-bootstrap";
 import {AiOutlineShoppingCart} from 'react-icons/ai'
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <Navbar bg="dark" variant="dark" style={{ height: 80 }}>
       <Container>
         <Navbar.Brand>
-          <a href="#">Shopping Cart</a>
+          <Link to="/">Shopping Cart</Link>
         </Navbar.Brand>
         <Navbar.Text className="search">
           <FormControl
